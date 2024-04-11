@@ -22,7 +22,7 @@ if [ ! -f "$TINYSA_BIN" ]; then
     echo "Failed to download firmware. Exiting."
     exit 1
 fi
-
+foo
 echo "⬇️  Downloading: ${TINYSA_BAT}"
 rm ${TINYSA_BAT} 2>/dev/null
 wget -q "${TINYSA_DFU_URL}${TINYSA_BAT}"
